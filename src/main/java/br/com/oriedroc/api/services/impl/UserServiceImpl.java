@@ -7,6 +7,8 @@ import br.com.oriedroc.api.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -17,5 +19,10 @@ public class UserServiceImpl implements UserService {
 
         return repository.findById(id)
                 .orElseThrow(() -> new ObjectNotFoundException("User not found"));
+    }
+
+    @Override
+    public List<User> findAll() {
+        return repository.findAll();
     }
 }
