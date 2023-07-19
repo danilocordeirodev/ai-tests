@@ -5,7 +5,7 @@ import br.com.oriedroc.api.domain.dto.UserDTO;
 import br.com.oriedroc.api.repositories.UserRepository;
 import br.com.oriedroc.api.services.exceptions.DataIntegrityViolationException;
 import br.com.oriedroc.api.services.exceptions.ObjectNotFoundException;
-import org.junit.jupiter.api.Assertions;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
